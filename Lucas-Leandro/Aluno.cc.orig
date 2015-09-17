@@ -1,0 +1,34 @@
+#include "Aluno.h"
+#include<iostream>
+using namespace std;
+
+Aluno::Aluno(float p1, float p2, float t1, float t2)
+{
+prova1 = p1;
+prova2 = p2;
+trab1 = t1;
+trab2 = t2;
+media=0;
+}
+void Aluno::calcularMedia()
+{
+float m;
+m=((2.0*prova1)+(2.0*prova2)+((trab1+trab2)/2.0))/5.0;
+media=m;
+
+}
+void Aluno::mostrar()
+{
+cout<<"Prova 1: "<<prova1<<endl;
+cout<<"Prova 2: "<<prova2<<endl;
+cout<<"Trabalho 1: "<<trab1<<endl;
+cout<<"Trabalho 2: "<<trab2<<endl;
+cout<<"Media: "<<media<<endl;
+}
+
+ostream& operator<<(ostream& s, const Aluno& media)
+{
+    s <<  media;
+         
+return s;
+}
