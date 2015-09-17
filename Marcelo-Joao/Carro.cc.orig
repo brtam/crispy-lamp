@@ -1,0 +1,89 @@
+/*
+Implemente um carro. O tanque de combustível do carro armazena no máximo 50 litros de gasolina. O carro consome 15 km/litro. Deve ser possível:
+
+    Abastecer o carro com uma certa quantidade de gasolina;
+    Mover o carro em uma determinada distância (medida em km);
+    Retornar a quantidade de combustível e a distância total percorrida.
+
+No programa principal, crie 2 carros. Abasteça 20 litros no primeiro e 30 litros no segundo. Desloque o primeiro em 200 km e o segundo em 400 km. Exiba na tela a distância percorrida e o total de combustível restante para cada um.
+
+
+
+//Programação para engenharia II 2015/2
+//////////////////////////////////////// marcelo.navarro@acad.pucrs.br */
+//////////////////////////////////////// joao.alencastro@acad.pucrs.br */
+
+
+# include <iostream>
+
+using namespace std;
+
+class Carro
+{
+    friend std::ostream& operator<<(std::ostream&,const Carro&);
+private:
+    float Tanque;
+    float Odometro;
+    float ConsumoL;
+public:
+    Carro();
+    Carro(float T,float O,float C);
+    void Mover(float distancia);
+    void Abastecer();
+
+};
+Carro::Carro()
+{
+    Tanque = 0;
+    Odometro = 0;
+    ConsumoL = 15;
+}
+
+Carro::Carro(float T,float O,float C)
+{
+    Tanque = T;
+    Odometro = O;
+    ConsumoL = C;
+}
+
+std::ostream& operator<<(std::ostream& s,const Carro& c)
+{
+    s<<"[ Odometro = "<<c.Odometro<<"km  ,Tanque de combustivel = "<<c.Tanque<<"l, Consumo médio = "<<c.ConsumoL<<"km/l ]"<<endl;
+
+    return s;
+}
+
+void Carro::Mover(float distancia)
+{
+Odometro=Odometro+distancia;
+Tanque = Tanque-(distancia/ConsumoL);
+}
+
+void Carro::Abastecer()
+{
+float l;
+do
+{
+cout<<"Quantos litros deseja abastecer?"<<endl;
+cin>>l;
+if(l+Tanque>50)
+{
+Tanque =50;
+cout<<"Capacidade do tanque maxima de 50l"<<endl<<"...enchendo o tanque"<<endl;
+}
+cout<<"Abastecendo ...."<<endl; 
+}
+}
+int main (void)
+{
+    Carro c1(20,0,15);
+    c1.Mover(200);
+    Carro c2(30,0,15);
+    c2.Mover(400);
+    cout<<"la vem os carros"<<endl;
+    cout<<"carro1 "<<c1<<endl;
+    cout<<"carro2 "<<c2<<endl;
+
+    return 0;
+
+}
