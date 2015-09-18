@@ -3,18 +3,36 @@
 //TRABALHO I (F)
 #include "Aluno.h"
 #include<iostream>
+#include <fstream>
 using namespace std;
 
 
 int main()
 {
-    Aluno a1(5.0,6.0,8.0,7.0);
+
+    ifstream arqaluno;
+    cout << "Abrindo arquivo texto..." << endl;
+// Abre arquivo
+    arqaluno.open( "arqaluno.txt" , ios::in );
+// Se houver erro, sai do programa
+    if (!arqaluno.is_open())
+    {
+        cout << "Erro fatal!" << endl;
+        return(1); // Aborta programa
+    }
+    float w, x, y, z;
+    arqaluno >>w>> x >> y >>z;
+    cout << "Fechando o arquivo..." << endl;
+    arqaluno.close();
+
+
+
+
+
+    Aluno a1(w,x,y,z);
     a1.calcularMedia();
     a1.mostrar();
 
- Aluno a2(9.0,6.0,8.0,10.0);
-    a2.calcularMedia();
-    a2.mostrar();
 
 
     return 0;
