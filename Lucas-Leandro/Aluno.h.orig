@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+
+class Aluno {
+friend std::ostream& operator<<(std::ostream&, const Aluno&);
+private:
+float media;
+float prova1;
+float prova2;
+float trab1;
+float trab2;
+
+public:
+Aluno (float p1, float p2, float t1, float t2);
+void mostrar();
+void calcularMedia();
+
+};
