@@ -1,0 +1,94 @@
+    1  ls
+    2  pwd
+    3  cd driveh
+    4  pwd
+    5  man ls
+    6  driveH
+    7  man mkdir
+    8  mam mkdir
+    9  man mkdir
+   10  ls
+   11  clean
+   12  clean
+   13  cleann
+   14  ls
+   15  cd DriveH
+   16  ls
+   17  ls bruno filipe
+   18  ls
+   19  cd DriveH
+   20  ls
+   21  cd bruno-filipe
+   22  ls
+   23  make juros
+   24  make juros
+   25  make juros
+   26  make juros
+   27  make juros
+   28  make juros
+   29  make juros
+   30  make juros
+   31  make juros
+   32  make juros
+   33  make juros
+   34  make juros
+   35  make juros
+   36  make juros
+   37  make juros
+   38  make juros
+   39  make juros
+   40  make juros
+   41  make juros
+   42  make juros
+   43  make juros
+   44  make juros
+   45  make juros
+   46  make juros
+   47  ./juros
+   48  ./juros
+   49  ./juros
+   50  make juros
+   51  make juros
+   52  make juros
+   53  make juros
+   54  make juros
+   55  make juros
+   56  make juros
+   57  ./j
+   58  ./juros
+   59  ./juros
+   60  make juros
+   61  ./juros
+   62  make juros
+   63  ./juros
+   64  make juros
+   65  ./juros
+   66  ./juros
+   67  make juros
+   68  make juros
+   69  ./juros
+   70  make juros
+   71  ./juros
+   72  make juros
+   73  ./juros
+   74  pwd
+   75  ls
+   76  cd DriveH
+   77  ls
+   78  cd crispy-lamp
+   79  sl
+   80  ls
+   81  cd bruno-filipe
+   82  ls
+   83  history 
+   84  git status
+   85  cd ..
+   86  git status
+   87  git add --all
+   88  git status
+   89  git commit -m "entrega exercicio 2"
+   90  git pull
+   91  git push
+   92  history
+   93  cat .history
+   94  history > texto.txt
