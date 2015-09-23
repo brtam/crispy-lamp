@@ -1,0 +1,6 @@
+0 nome 0 0
+1 martelo 25 5
+2 martelo 25 5
+3 martelo 25 5
+4 martelo 25 5
+5 martelo 25 5
